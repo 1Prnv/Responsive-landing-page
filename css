@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+.navbar.scrolled {
+    background: #555;
+}
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: #f0a500;
+}
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+}
+.content-section {
+    padding: 100px 20px;
+    text-align: center;
+}
